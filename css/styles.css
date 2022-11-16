@@ -14,10 +14,35 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+header {
+  border-bottom: 1px solid #ececec;
+}
 button {
   border: none;
 }
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  outline: 1px solid navy;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 .list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 /* Logo */
@@ -31,6 +56,9 @@ button {
   letter-spacing: 0.03em;
   text-decoration: none;
 }
+.logo.header {
+  margin-right: 93px;
+}
 .logo.header span {
   color: #000000;
 }
@@ -38,7 +66,18 @@ button {
   color: var(--title-text-color-light);
 }
 /* Site navigation */
+.head {
+  display: flex;
+  align-items: center;
+}
+.navigation.list {
+  display: flex;
+}
 .navigation .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--title-text-color-dark);
 
   font-weight: 500;
@@ -47,6 +86,12 @@ button {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
+.navigation > .item {
+  margin-right: 50px;
+}
+.navigation > .item:last-child {
+  margin-right: 0;
+}
 .navigation .link:hover,
 .navigation .link:focus {
   color: var(--accent-primary-color);
@@ -54,7 +99,15 @@ button {
 .navigation .link.current {
   color: var(--accent-primary-color);
 }
+.contacts.list {
+  display: flex;
+  margin-left: auto;
+}
 .contacts .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--primary-text-color);
 
   font-weight: 500;
@@ -62,6 +115,12 @@ button {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+}
+.contacts > .item {
+  margin-right: 50px;
+}
+.contacts > .item:last-child {
+  margin-right: 0;
 }
 .contacts .link:hover,
 .contacts .link:focus {
@@ -73,6 +132,9 @@ button {
   text-align: center;
 }
 .hero-title {
+  padding-top: 200px;
+  padding-bottom: 30px;
+
   color: var(--title-text-color-light);
 
   font-weight: 900;
@@ -83,11 +145,19 @@ button {
 }
 /* Button */
 .button {
+  border-radius: 4px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
   cursor: pointer;
+}
+.list .button {
+  padding-top: 6px;
+  padding-right: 22px;
+  padding-bottom: 6px;
+  padding-left: 22px;
 }
 .list .button:hover,
 .list .button:focus {
@@ -95,6 +165,12 @@ button {
   background-color: var(--accent-primary-color);
 }
 .hero .button {
+  padding-top: 10px;
+  padding-right: 32px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  margin-bottom: 200px;
+
   color: var(--title-text-color-light);
   background-color: var(--accent-primary-color);
 
@@ -114,6 +190,7 @@ button {
 }
 /* Section */
 .section-title {
+  text-align: center;
   color: var(--title-text-color-dark);
 
   font-weight: 700;
@@ -163,12 +240,21 @@ button {
 .footer {
   background-color: #2f303a;
 }
+.footer > .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 .footer-address {
+  margin-top: 20px;
+
   color: var(--title-text-color-light);
 
   font-style: normal;
 }
 .footer-link {
+  display: inline-block;
+  margin-top: 9px;
+
   color: rgba(255, 255, 255, 0.6);
 
   text-decoration: none;
