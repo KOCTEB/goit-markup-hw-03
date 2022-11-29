@@ -321,9 +321,17 @@ img {
   letter-spacing: 0.06em;
 }
 .portfolio-item {
+  margin-top: 4px;
+
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
+}
+.card-description {
+  padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 /* Footer */
 .footer {
